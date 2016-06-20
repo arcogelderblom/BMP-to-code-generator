@@ -1,0 +1,109 @@
+\hypertarget{classbitmap}{}\section{bitmap Class Reference}
+\label{classbitmap}\index{bitmap@{bitmap}}
+
+
+Bitmap class.  
+
+
+
+
+{\ttfamily \#include $<$bitmap.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbitmap_a1b4f88c58682ffb0fa14de38a3c4365c}{bitmap} (char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Constructor Bitmap. \end{DoxyCompactList}\item 
+void \hyperlink{classbitmap_a62aec4680ba36e7e193a43987276eded}{use\+\_\+nokia5510} (void)
+\begin{DoxyCompactList}\small\item\em Check bitmap for use with a Nokia 5510 screen. \end{DoxyCompactList}\item 
+int \hyperlink{classbitmap_a268eb76570f4702cac1cd20a1e623108}{get\+\_\+width} (void)
+\begin{DoxyCompactList}\small\item\em Get width function. \end{DoxyCompactList}\item 
+int \hyperlink{classbitmap_a879ab1c22b332708bc8115dbcb3ab8af}{get\+\_\+heigth} (void)
+\begin{DoxyCompactList}\small\item\em Get height function. \end{DoxyCompactList}\item 
+int \hyperlink{classbitmap_a927707c46dd2e618c9c4b275aa84ba13}{check\+\_\+padding} (void)
+\begin{DoxyCompactList}\small\item\em Check the padding of the image. \end{DoxyCompactList}\item 
+void \hyperlink{classbitmap_a17cd715d6dc8c8f3af2dbe4fe669b04b}{get\+\_\+black\+\_\+pixels} (char $\ast$out\+\_\+file)
+\begin{DoxyCompactList}\small\item\em Get the pixels function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bitmap class. 
+
+This class will let you open a bmp file, convert it to an array readable for c++ and some extra things like\+: get the width, get the height, check if the image is compatible with a Nokia 5510 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{bitmap@{bitmap}!bitmap@{bitmap}}
+\index{bitmap@{bitmap}!bitmap@{bitmap}}
+\subsubsection[{\texorpdfstring{bitmap(char $\ast$filename)}{bitmap(char *filename)}}]{\setlength{\rightskip}{0pt plus 5cm}bitmap\+::bitmap (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{classbitmap_a1b4f88c58682ffb0fa14de38a3c4365c}{}\label{classbitmap_a1b4f88c58682ffb0fa14de38a3c4365c}
+
+
+Constructor Bitmap. 
+
+Call this to be sure that you can use your file. In the construcor the program will try to open the file and if it can be opened store some info about the file in the variables. If the file cant be opened the program will tell you this 
+
+\subsection{Member Function Documentation}
+\index{bitmap@{bitmap}!check\+\_\+padding@{check\+\_\+padding}}
+\index{check\+\_\+padding@{check\+\_\+padding}!bitmap@{bitmap}}
+\subsubsection[{\texorpdfstring{check\+\_\+padding(void)}{check_padding(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int bitmap\+::check\+\_\+padding (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classbitmap_a927707c46dd2e618c9c4b275aa84ba13}{}\label{classbitmap_a927707c46dd2e618c9c4b275aa84ba13}
+
+
+Check the padding of the image. 
+
+This function gets used internally in the program and is not necessary to call, it checks the padding so when indexing some bytes can be skipped so it is possible to get the right information about the pixels out of the file \index{bitmap@{bitmap}!get\+\_\+black\+\_\+pixels@{get\+\_\+black\+\_\+pixels}}
+\index{get\+\_\+black\+\_\+pixels@{get\+\_\+black\+\_\+pixels}!bitmap@{bitmap}}
+\subsubsection[{\texorpdfstring{get\+\_\+black\+\_\+pixels(char $\ast$out\+\_\+file)}{get_black_pixels(char *out_file)}}]{\setlength{\rightskip}{0pt plus 5cm}void bitmap\+::get\+\_\+black\+\_\+pixels (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{out\+\_\+file}
+\end{DoxyParamCaption}
+)}\hypertarget{classbitmap_a17cd715d6dc8c8f3af2dbe4fe669b04b}{}\label{classbitmap_a17cd715d6dc8c8f3af2dbe4fe669b04b}
+
+
+Get the pixels function. 
+
+This function makes a file following the c++ header file form and stores everything necessary in it to make sure it is possible to display the used bmp on a Nokia 5510 screen. \index{bitmap@{bitmap}!get\+\_\+heigth@{get\+\_\+heigth}}
+\index{get\+\_\+heigth@{get\+\_\+heigth}!bitmap@{bitmap}}
+\subsubsection[{\texorpdfstring{get\+\_\+heigth(void)}{get_heigth(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int bitmap\+::get\+\_\+heigth (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classbitmap_a879ab1c22b332708bc8115dbcb3ab8af}{}\label{classbitmap_a879ab1c22b332708bc8115dbcb3ab8af}
+
+
+Get height function. 
+
+Returns the height of the image \index{bitmap@{bitmap}!get\+\_\+width@{get\+\_\+width}}
+\index{get\+\_\+width@{get\+\_\+width}!bitmap@{bitmap}}
+\subsubsection[{\texorpdfstring{get\+\_\+width(void)}{get_width(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int bitmap\+::get\+\_\+width (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classbitmap_a268eb76570f4702cac1cd20a1e623108}{}\label{classbitmap_a268eb76570f4702cac1cd20a1e623108}
+
+
+Get width function. 
+
+Returns the width of the image \index{bitmap@{bitmap}!use\+\_\+nokia5510@{use\+\_\+nokia5510}}
+\index{use\+\_\+nokia5510@{use\+\_\+nokia5510}!bitmap@{bitmap}}
+\subsubsection[{\texorpdfstring{use\+\_\+nokia5510(void)}{use_nokia5510(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void bitmap\+::use\+\_\+nokia5510 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classbitmap_a62aec4680ba36e7e193a43987276eded}{}\label{classbitmap_a62aec4680ba36e7e193a43987276eded}
+
+
+Check bitmap for use with a Nokia 5510 screen. 
+
+This function uses the variables of width and height to check if the bitmap can be used with a Nokia 5510 screen. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{bitmap_8hpp}{bitmap.\+hpp}\item 
+bitmap.\+cpp\end{DoxyCompactItemize}
